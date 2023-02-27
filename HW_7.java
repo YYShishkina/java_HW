@@ -1,3 +1,4 @@
+//Написана часть программы, которая отрабатывает цепочку только поиску по модели
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,23 +12,26 @@ public class HW_7 {
         market.add(CreateNout("Apple",30,"white",200));
         market.add(CreateNout("Miu",10,"pink",100));
         while (true) {
-            System.out.print("Input parametr to chooce nout - model, price, memory or color - ");
+            System.out.print("Input parametr to chooce nout - model, price, memory or color - or exit if you want exit - ");
             Scanner Param = new Scanner(System.in);
             String ChPar = Param.next();
             if (ChPar.equals("model")) {
-                System.out.print("Input parametr to chooce nout - Apple, IBM, HP or Miu - ");
+                System.out.print("Input parametr to chooce nout - Apple, IBM exit" +
+                        "or Miu - ");
                 Scanner model = new Scanner(System.in);
                 String modelType = model.next();
-                if ((modelType.equals("Apple")) || (modelType.equals("IBM")) || (modelType.equals("HP")) || (modelType.equals("Miu"))){
-                    for (int i=0; i<4; i++){
+                if ((modelType.equals("Apple")) || (modelType.equals("IBM")) || (modelType.equals("Miu"))) {
+                    for (int i = 0; i < 4; i++) {
                         if (modelType.equals(market.get(i).getName())) {
                             PrintData(market.get(i));
                         }
                     }
                 }
                 else {
-                    System.out.print("There is now that model in market");
+                        System.out.println("There is now that model in market");
+                        System.out.println();
                 }
+
             }
             if (ChPar.equals("exit")) {
                 break;
