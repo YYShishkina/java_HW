@@ -7,9 +7,6 @@ import java.util.*;
 
 
 
-
-
-
 public class App {
 
     static int[][] getMap() {
@@ -55,29 +52,42 @@ public class App {
         map[x][y] = 2;
     }
 
+
+/*
     static void Le (int[][] map, int startX, int startY, int finishX, int finishY){
+        ArrayList<Integer> lst = new ArrayList<>();
+        int count1 = 0;
+        int count2 = 0;
         int rows = map.length;
         int colums = map[0].length;
-        int count = 0;
-        while(count< (int i=startX; i<rows; i++){
-            for(int j=startY; j<colums; j++) {
-                if (((startX-i)>=0) & ((starX+i)<=rows) & ((starY-j)>=0) & ((startY+j)<=colums))) {
-                    if (map[i][j] == 0) {
-                        map[i][j]=map
-                    }
-
-                }
+        lst.add(startX,startY);
+        for (int i=1; i<3; i++) {
+            if (map[startX+i][startY] != -1)  {
+                map[startX+i][startY] = map[startX][startY]+1;
+                lst.add(map[startX+i][startY]);
             }
+
+        }
+        System.out.println(lst);
+        map[][] = lst.get(1) ;
+
+            if map(lst.get(1)))
+            map[startX+i][startY] = map[startX][startY]+1;
+            lst.add(map[startX+i][startY]);
         }
     }
+*/
 
 
 
 
     public static void main(String[] args) {
+        Node nod1 = new Node();
         int[][] map = getMap();
         start(map, 4, 1);
         finish(map, 8, 3);
         pprint(map);
+//        Le(map,4,1,8,3);
+//        pprint(map);
     }
 }
