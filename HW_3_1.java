@@ -1,7 +1,7 @@
 //2. Задан целочисленный список ArrayList. Найти минимальное,
 // максимальное и среднее арифметическое из этого списка.
 
-package HW_1;
+package HW_OOP_1;
 
 import java.util.Scanner;
 import java.util.ArrayList;

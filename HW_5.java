@@ -1,10 +1,5 @@
 
-package HW_1;
-
-import java.util.Scanner;
-import java.util.*;
-
-
+package HW_OOP_1;
 
 
 public class App {

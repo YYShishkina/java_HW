@@ -1,4 +1,4 @@
-package HW_1;
+package HW_OOP_1;
 import java.util.Scanner;
 
 public class HW_2 {

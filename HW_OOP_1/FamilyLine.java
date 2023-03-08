@@ -1,4 +1,4 @@
-
+package HW_OOP_1;
 
 public class FamilyLine {
 
@@ -35,4 +35,7 @@ public class FamilyLine {
         this.PersonS = PersonS;
         this.connection=connection;
     }
+
+
+
 }

@@ -3,7 +3,7 @@
 //        Если введено print, выводит строки так, чтобы последняя введенная была первой в списке, а первая - последней.
 //        Если введено revert, удаляет предыдущую введенную строку из памяти.
 
-package HW_1;
+package HW_OOP_1;
 
 import java.util.Scanner;
 import java.util.LinkedList;

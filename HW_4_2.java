@@ -3,9 +3,8 @@
 //2. Пусть дан LinkedList с несколькими элементами. Реализуйте метод, который вернет “перевернутый” список.
 
 
-package HW_1;
+package HW_OOP_1;
 
-import java.util.Scanner;
 import java.util.LinkedList;
 
 
